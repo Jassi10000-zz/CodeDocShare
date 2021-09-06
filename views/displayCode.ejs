@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to HasterBin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js" integrity="sha512-MinqHeqca99q5bWxFNQEQpplMBFiUNrEwuuDj2rCSh1DgeeTXUgvgYIHZ1puBS9IKBkdfLMSk/ZWVDasa3Y/2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/solarized-dark.min.css" integrity="sha512-JPpsArcPmVD/lHCCuZeG6Kx4x2qURRXHXxKYaXYJiKEKaoLOcXKDYqQ4jSeauXbk+U6uZ1UzrGO85y+lpys0Og==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>hljs.highlightAll();</script>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <%- include("controls.ejs", {id: locals.id}) %>
+        <div class="main-wrapper">
+            <div class="line-numbers">
+                <% for(let i=1;i<=code.split('\n').length;i++) { %>
+                    <div><%= i %></div>
+                <% } %>
+            </div>
+            <pre><code id="code-display" 
+                class="<%= locals.language ? 
+                    `language-${locals.language}` : "" %>"
+                ><%= code %></code></pre>
+           
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

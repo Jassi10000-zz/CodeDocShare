@@ -1,0 +1,17 @@
+<div class="controls-wrapper">
+    <a href="/" class="logo">HasteBin</a>
+    <div class="buttons">
+        <!-- new button -->
+        <button class="btn"><a href="/new">New</a></button>
+
+        <% if(locals.canSave) { %>
+            <!-- save button -->
+            <button class="btn" type="submit">Save</button>
+        <% } %>
+
+        <!-- duplicate button -->
+        <% if(locals.id != null) { %>
+            <button class="btn"><a href="/<%= locals.id %>/duplicate">Duplicate</a></button>
+        <% } %>
+    </div>
+</div>
