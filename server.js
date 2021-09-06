@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8000;
 // requiring the model document
 const modelDoc = require('./models/modelDoc')
 
-const code = `Welcome to HasteBin 👋 !! 
+const code = `Welcome to CodeDocShare 👋 !! 
 
 The one stop solution to your code / text sharing problems ⭐
 Write or Paste snippets of code / text ,save it, edit it and 
