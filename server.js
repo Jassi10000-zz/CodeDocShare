@@ -7,9 +7,10 @@ app.use(express.urlencoded({extended: true}))
 
 app.set("view engine" , "ejs");
 
+const uri = process.env.MONGODB_URI;
 
 // setting up the database connection
-mongoose.connect('mongodb://localhost:27017/{hastebin}', {
+mongoose.connect(uri, {
     useNewUrlParser: true, useUnifiedTopology: true
 });
 
