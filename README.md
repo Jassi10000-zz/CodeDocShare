@@ -31,10 +31,15 @@ CodeDocShare also offers the functionality of detecting the snippet whether it's
     <img src="./Images/ss1.PNG" width="900px" height="320px">
 </p>
 
-<p align="left"> 
+<p align="center"> 
     <img src="./Images/ss2.PNG" width="400px" height="420px">
-    <img align="right" src="./Images/ss3.PNG" width="500px" height="310px">
 </p>
+
+<p align="center"> 
+    <img src="./Images/ss3.PNG" width="800px" height="350px">
+</p>
+
+<br>
 
 <p align="center"> 
     <img src="./Images/ss4.PNG" width="870px" height="390px">
